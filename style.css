@@ -43,6 +43,7 @@
   align-items: center;
   width: 1.5rem;
   height: 2rem;
+  position: relative;
 }
 
 .navbar__menu__icon--content {
@@ -96,7 +97,7 @@
   padding-top: 10rem;
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 255, 255, 1) 40%,
     rgba(255, 255, 255, 0.5)
   );
   flex-direction: column;
@@ -105,6 +106,7 @@
   font-weight: 600;
   font-size: 2rem;
   color: var(--dark-grey-blue);
+
 }
 
 .navbar__menu__list--on .navbar__list--item::first-letter {
@@ -112,7 +114,7 @@
 }
 
 .navbar__logo-container {
-  z-index: 1;
+  z-index: 100;
 }
 
 @media (min-width: 768px) {
@@ -187,3 +189,17 @@
   padding: 1rem;
   margin-top: 1.5rem;
 }
+
+@media (min-width: 768px)
+{
+    .hero-container
+    {
+        background: url(images/Hero-bg-tablet.png);
+        background-size: cover;
+        align-items: flex-start;
+        padding-left: 4rem;
+        padding-right: 35%;
+        text-align: start;
+    }
+}
+
