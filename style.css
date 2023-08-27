@@ -317,3 +317,28 @@
     z-index: -1;
    }
 }
+
+@media (min-width: 1440px)
+{
+
+    .sellection__item
+    {
+        flex-direction: column;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .sellection
+    {
+        flex-direction: row;
+    }
+
+    .sellection__opacity-tittle
+    {
+        font-size: 14rem;
+        top: -4rem;
+    }
+    .sellection__tittle, .sellection__content
+    {
+        text-align: center;
+    }
+}
