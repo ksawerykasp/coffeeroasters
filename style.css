@@ -203,3 +203,19 @@
     }
 }
 
+@media (min-width: 1440px)
+{
+    .hero-container
+    {
+        background: url(images/Hero-bg-desktop.png);
+        background-size: cover;
+        padding-right: 45%;
+        gap: 5rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .hero-container__tittle{
+        font-size: 5rem;
+    }
+}
+
