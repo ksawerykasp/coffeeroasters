@@ -368,3 +368,32 @@
 {
     height: 4rem;
 }
+
+@media (min-width: 768px)
+{
+    .benefits
+    {
+        padding: 4rem;
+    }
+
+    .benefits__item
+    {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .benefits__item-text
+    {
+        text-align: start;
+    }
+
+    .benefits__item--img
+    {
+        height: 3rem;
+    }
+    .benefits__item--title
+    {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
