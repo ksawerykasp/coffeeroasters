@@ -18,7 +18,7 @@
 
 .page-container
 {
-    max-width: 1440px;
+    max-width: 1280px;
     padding: 2rem;
     margin: 0 auto;
 }
@@ -94,4 +94,28 @@ body{
         border-radius: 5px;
     }
 
+}
+
+@media(min-width: 1440px)
+{
+    .hero-container
+    {
+        background: url(images/hero-bg-dt.jpg);
+        background-size: cover;
+        padding-right: 50%;
+    }
+
+    .hero__title
+    {
+        font-size: 6rem;
+    }
+    .hero__content
+    {
+        font-size: 1.3rem;
+    }
+    .hero__button
+    {
+        height: 4rem;
+        font-size: 1.5rem;
+    }
 }
