@@ -477,6 +477,11 @@
 
 @media (min-width: 768px)
 {
+    .plan__title
+    {
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
     .plan__items-container
     {
         display: flex;
@@ -491,9 +496,32 @@
     .plan__button
     {
         width: 30%;   
-        margin: 2rem;
+        margin-left: 2rem;
     }
     .plan{
         align-items: flex-start;
     }
+}
+
+@media (min-width: 1440px)
+{
+.plan{
+    margin: 4rem;
+}
+
+.plan__button
+{
+    width: 20%;
+    margin-left: 4rem;
+}
+
+.plan__item
+{
+    margin-right: 11rem;
+}
+
+.plan__items-container
+{
+    margin-left: 4rem;
+}
 }
