@@ -16,6 +16,7 @@
 .page-container
 {
     max-width: 1440px;
+    padding: 2rem;
 }
 
 body{
@@ -31,7 +32,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
 }
 
 .navbar__toggleMenu
@@ -135,4 +135,38 @@ body{
 {
     transform: translateY(50%) rotate(45deg);
     bottom: 50%;
+}
+
+@media(min-width:768px)
+{
+    .navbar__toggleButton
+    {
+        display: none;
+    }
+    .navbar__toggleMenu
+    {
+        all: unset;
+    }
+    .navbar__list
+    {
+        all: unset;
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        font-family: 'Barlow', sans-serif;
+    }
+    .navbar__list-item{
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--grey);
+        font-size: .9rem;
+    }
+    .navbar__title
+    {
+        font-size: 2rem;
+    }
+    .navbar__img
+    {
+        height: 1.5rem;
+    }
 }
