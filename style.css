@@ -6,11 +6,18 @@
     --light-cream: #FEFCF7;
     --grey: #83888F;
     --white: #FFFFFF;
+    --fraunces: 'Fraunces', serif;
+    --barlow: 'Barlow', serif;
 }
 
 *
 {
     box-sizing: border-box;
+}
+
+button
+{
+    cursor: pointer;
 }
 
 .page-container
@@ -24,6 +31,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--light-cream);
+    font-family: var(--fraunces);
 }
 
 /*NAVIGATION*/
@@ -40,17 +48,20 @@ body{
     display: none;
 }
 
-.navbar__toggleButton
+.navbar__hamburger-button
 {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 1.3rem;
-    height: 3rem;
+    width: 25px;
+    height: 50px;
+    border: none;
+    background: none;
+    padding: 0;
 }
 
-.navbar__toggleButton-icon
+.navbar__button-line
 {
     width: 100%;
     height: 3px;
@@ -58,7 +69,7 @@ body{
     border-radius: 10px;
 }
 
-.navbar__toggleButton-icon::after, .navbar__toggleButton-icon::before
+.navbar__button-line::after, .navbar__button-line::before
 {
     content: "";
     position: absolute;
@@ -66,14 +77,15 @@ body{
     height: 3px;
     background-color: var(--dark-grey-blue);
     border-radius: 10px;
+    left: 0;
 }
 
-.navbar__toggleButton-icon::after
+.navbar__button-line::after
 {
     top: 1rem;
 }
 
-.navbar__toggleButton-icon::before
+.navbar__button-line::before
 {
     bottom: 1rem;
 }
@@ -82,7 +94,7 @@ body{
 {
     font-size: 1.5rem;
     color: var(--dark-grey-blue);
-    font-family: 'Fraunces', serif;
+    font-family: var(--fraunces);
 }
 
 .navbar__logo-container
@@ -98,7 +110,7 @@ body{
     font-size: 1.5rem;
     padding-left: 0;
     padding-top: 6rem;
-    font-family: 'Fraunces', serif;
+    font-family: var(--fraunces);
     gap: 2rem;
 }
 
@@ -121,18 +133,18 @@ body{
     text-align: center;
 }
 
-.navbar__toggleButton-icon--active
+.navbar__button-line--active
 {
     background: none;
 }
 
-.navbar__toggleButton-icon--active::after
+.navbar__button-line--active::after
 {
     transform: translateY(-50%) rotate(-45deg);
     top: 50%;
 }
 
-.navbar__toggleButton-icon--active::before
+.navbar__button-line--active::before
 {
     transform: translateY(50%) rotate(45deg);
     bottom: 50%;
@@ -140,7 +152,7 @@ body{
 
 @media(min-width:768px)
 {
-    .navbar__toggleButton
+    .navbar__hamburger-button
     {
         display: none;
     }
@@ -154,7 +166,7 @@ body{
         list-style: none;
         display: flex;
         gap: 2rem;
-        font-family: 'Barlow', sans-serif;
+        font-family: var(--barlow);
     }
     .navbar__list-item{
         text-transform: uppercase;
