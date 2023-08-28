@@ -1,0 +1,73 @@
+:root
+{
+    --dark-cyan: #0E8784;
+    --dark-grey-blue: #333D4B;
+    --pale-orange: #FDD6BA; 
+    --light-cream: #FEFCF7;
+    --grey: #83888F;
+    --white: #FFFFFF;
+
+    --fraunces: 'Fraunces', serif;
+    --barlow: 'Barlow', serif;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.page-container
+{
+    max-width: 1280px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-cream);
+    font-family: var(--fraunces);
+}
+
+button
+{
+    cursor: pointer;
+}
+
+/*COLLECTION*/
+
+.collection-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.collection-container__img
+{
+    width: 15rem;
+}
+
+.collection-container__item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.collection-container__content
+{
+    font-family: var(--barlow);
+    color: var(--dark-grey-blue);
+}
+
+.collection-container__title
+{
+    color: var(--dark-grey-blue);
+    text-transform: capitalize;
+}
