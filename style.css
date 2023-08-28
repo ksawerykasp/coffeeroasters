@@ -1,0 +1,138 @@
+:root
+{
+    --dark-cyan: #0E8784;
+    --dark-grey-blue: #333D4B;
+    --pale-orange: #FDD6BA; 
+    --light-cream: #FEFCF7;
+    --grey: #83888F;
+    --white: #FFFFFF;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.page-container
+{
+    max-width: 1440px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-cream);
+}
+
+/*NAVIGATION*/
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.navbar__toggleMenu
+{
+    display: none;
+}
+
+.navbar__toggleButton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1.3rem;
+    height: 3rem;
+}
+
+.navbar__toggleButton-icon
+{
+    width: 100%;
+    height: 3px;
+    background-color: var(--dark-grey-blue);
+    border-radius: 10px;
+}
+
+.navbar__toggleButton-icon::after, .navbar__toggleButton-icon::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--dark-grey-blue);
+    border-radius: 10px;
+}
+
+.navbar__toggleButton-icon::after
+{
+    top: 1rem;
+}
+
+.navbar__toggleButton-icon::before
+{
+    bottom: 1rem;
+}
+
+.navbar__title
+{
+    font-size: 1.5rem;
+    color: var(--dark-grey-blue);
+    font-family: 'Fraunces', serif;
+}
+
+.navbar__logo-container
+{
+    z-index: 999;
+}
+
+.navbar__list
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding-left: 0;
+    padding-top: 6rem;
+    font-family: 'Fraunces', serif;
+    gap: 2rem;
+}
+
+.navbar__list-item
+{
+    text-transform: capitalize;
+}
+
+.navbar__toggleMenu--active
+{
+    display: flex;
+    position: absolute;
+    background-image: linear-gradient(to bottom, var(--light-cream) 30%, transparent);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.navbar__toggleButton-icon--active
+{
+    background: none;
+}
+
+.navbar__toggleButton-icon--active::after
+{
+    transform: translateY(-50%) rotate(-45deg);
+    top: 50%;
+}
+
+.navbar__toggleButton-icon--active::before
+{
+    transform: translateY(50%) rotate(45deg);
+    bottom: 50%;
+}
