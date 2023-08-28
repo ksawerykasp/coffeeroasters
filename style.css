@@ -397,3 +397,34 @@
         margin-bottom: 1rem;
     }
 }
+
+@media (min-width: 1440px)
+{
+    .benefits__items-container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .benefits__item
+    {
+        flex-direction: column;
+        margin: 3rem;
+        padding: 5rem 3rem 5rem 3rem;
+    }
+    .benefits__item-text
+    {
+        text-align: center;
+    }
+    .benefits__item--img
+    {
+        height: 5rem;
+    }
+    .benefits__content
+    {
+        margin: 0 30% 0 30%;
+    }
+    .benefits
+    {
+        margin: 4rem;
+    }
+}
