@@ -28,6 +28,7 @@ body{
     padding: 0;
     background-color: var(--light-cream);
     font-family: var(--fraunces);
+    color: #333D4B;
 }
 
 button
@@ -43,6 +44,9 @@ button
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.collection-container:not(:first-child)
+{
     gap: 2.5rem;
 }
 
@@ -70,4 +74,69 @@ button
 {
     color: var(--dark-grey-blue);
     text-transform: capitalize;
+}
+
+.collection-container__opacity-title
+{
+    opacity: 25%;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+@media(min-width:768px)
+{
+   .collection-container__item
+   {
+    flex-direction: row;
+    text-align: start;
+   }
+
+   .collection-container__title
+   {
+    margin-bottom: 2.5rem;
+   }
+
+   .collection-container__description-container
+   {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+   }
+
+   .collection-container
+   {
+    position: relative;
+    gap: 3rem;
+   }
+
+   .collection-container__opacity-title
+   {
+    position: absolute;
+    top: -4.5rem;
+    font-size: 7.4rem;
+    z-index: -1;
+    opacity: 15%;
+   }
+}
+
+@media(min-width: 1280px)
+{
+    .collection-container__item
+   {
+    flex-direction: column;
+    text-align: center;
+   }
+   .collection-container
+   {
+    flex-direction: row;
+   }
+   .collection-container__title
+   {
+    margin: 4rem 0 1rem 0
+   }
+   .collection-container__opacity-title
+   {
+    font-size: 12rem;
+    top: -8rem;
+   }
 }
