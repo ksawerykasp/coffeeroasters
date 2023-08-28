@@ -474,3 +474,26 @@
 {
     font-family: "Barlow", serif;
 }
+
+@media (min-width: 768px)
+{
+    .plan__items-container
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .plan__item{
+        text-align: start;
+        margin: 2rem;
+        align-items: flex-start;
+    }
+    .plan__button
+    {
+        width: 30%;   
+        margin: 2rem;
+    }
+    .plan{
+        align-items: flex-start;
+    }
+}
