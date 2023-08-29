@@ -95,3 +95,23 @@ button
         margin-bottom: 3rem;
     }
 }
+
+@media(min-width:1280px)
+{
+  .footer
+  {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2rem 4rem;
+  }  
+
+
+  .footer__nav
+  {
+    margin: 0 0 0 5rem;
+  }
+
+  .footer__socials{
+   margin-left: auto;
+  }
+}
