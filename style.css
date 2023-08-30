@@ -6,6 +6,7 @@
     --light-cream: #FEFCF7;
     --grey: #83888F;
     --white: #FFFFFF;
+    --dark-grey: #2C343E;
 
     --fraunces: 'Fraunces', serif;
     --barlow: 'Barlow', serif;
@@ -36,6 +37,14 @@ body{
     font-family: var(--fraunces);
     color: var(--dark-grey-blue);
 }
+
+button
+{
+    cursor: pointer;
+}
+
+
+
 
 /*HERO*/
 
@@ -355,3 +364,123 @@ body{
    }
 }
 
+/*BENEFITS SECTION*/
+
+.benefits-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--light-cream);
+    position: relative;
+}
+
+.benefits-container__content-container
+{
+    background-color: var(--dark-grey-blue);
+    padding: 1.5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.benefits-container__content, .benefits-container__item-content
+{
+    font-family: var(--barlow);
+    opacity: 80%;
+}
+
+.benefits-container__item-title
+{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-container__items-container
+{
+    background-color:var(--dark-grey);
+    padding: 2rem;
+    position: absolute;
+    top: 100%;
+    height: 40rem;
+    border-radius: 0 0 10px 10px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.benefits-container__item
+{
+    background-color: var(--dark-cyan);
+    padding: 4rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.benefits-container__img
+{
+    height: 5rem;
+}
+
+@media(min-width:768px)
+{
+   .benefits-container__item
+   {
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 4rem;
+   } 
+
+   .benefits-container__items-container
+   {
+    text-align: start;
+    padding: 3rem;
+    height: 23rem;
+   }
+   .benefits-container__img
+   {
+    margin-right: 2rem;
+    height: 4rem;
+   }
+   .benefits-container__content-container
+   {
+    background-color: var(--dark-grey);
+   }
+
+ 
+}
+
+@media(min-width:1280px)
+{
+    .benefits-container__item
+    {
+        flex-direction: column;
+        text-align: center;
+        height: 25rem;
+        width: 30%;
+    }
+    .benefits-container__items-container
+    {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .benefits-container__content-container
+    {
+        padding: 3rem 30%;
+    }
+
+    .benefits-container__img
+    {
+        height: 5rem;
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    
+}
+
+ 
