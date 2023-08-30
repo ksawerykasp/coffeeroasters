@@ -6,6 +6,7 @@
   --grey: #83888f;
   --white: #ffffff;
   --dark-grey: #2c343e;
+  --light-cyan: #66d2cf;
 
   --fraunces: "Fraunces", serif;
   --barlow: "Barlow", serif;
@@ -140,6 +141,11 @@ button {
   bottom: 50%;
 }
 
+.navbar__list-item:hover {
+  color: var(--dark-grey-blue);
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .navbar__hamburger-button {
     display: none;
@@ -203,6 +209,10 @@ button {
   margin-top: 2.5rem;
   background-color: var(--dark-cyan);
   color: var(--light-cream);
+}
+
+.hero-container__button:hover {
+  background-color: var(--light-cyan);
 }
 
 @media (min-width: 768px) {
@@ -447,6 +457,10 @@ button {
 .plan-container__heading {
 }
 
+.plan-container__button:hover {
+  background-color: var(--light-cyan);
+}
+
 @media (min-width: 768px) {
   .plan-container__items-container {
     display: flex;
@@ -550,6 +564,10 @@ button {
 
 .footer__socials-img {
   height: 1.5rem;
+}
+.footer__nav-item:hover {
+  color: var(--light-cream);
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .footer__nav {
