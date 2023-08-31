@@ -30,6 +30,10 @@ body {
   color: var(--dark-grey-blue);
 }
 
+.overflow-body {
+  overflow: hidden;
+}
+
 button {
   cursor: pointer;
 }
@@ -115,7 +119,7 @@ button {
   position: absolute;
   background-image: linear-gradient(
     to bottom,
-    var(--light-cream) 30%,
+    var(--light-cream) 60%,
     transparent
   );
   width: 100%;
